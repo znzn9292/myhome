@@ -1,0 +1,35 @@
+spring:
+
+  # ===============================
+  # = ThymeLeaf
+  # ===============================
+  thymeleaf:
+    cache: false
+
+  # ===============================
+  # = MariaDB
+  # ===============================
+  datasource:
+#    url: jdbc:h2:tcp://localhost/~/znzn
+#    username: sa
+    url: jdbc:mariadb://znzn.synology.me:3306/znzn01
+    username: znzn02
+    password: znzn02
+#    driver-class-name: org.h2.Driver
+
+  # ===============================
+  # = JPA / Hibernate
+  # ===============================
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
