@@ -1,9 +1,0 @@
-version: '3'
-services:
-  tomcat:
-    image: znzn9292/docker-practice
-    ports:
-      - "8081:8080"
-    volumes:
-      - /home/ubuntu/example/war:/usr/local/tomcat/webapps
-      -
