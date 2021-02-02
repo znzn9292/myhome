@@ -103,7 +103,7 @@
             </plugin>
         </plugins>
 
-        <!--안녕 -->
+        <!--war name change -->
         <finalName>ROOT</finalName>
     </build>
 
